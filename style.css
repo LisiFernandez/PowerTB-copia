@@ -1,0 +1,520 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo */
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+
+}
+footer {
+    background-color: #333; /* Cor de fundo do footer */
+    color: #fff; /* Cor do texto no footer */
+    padding: 20px; /* Espaçamento interno */
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0; /* Mantém o footer no final da página */
+    margin: 0;
+    box-sizing: border-box;
+
+
+}
+.footer-logo img {
+    margin-bottom: 10px;
+    max-width: 40px;
+    margin-bottom: 10px;
+}
+
+
+
+
+.footer-links,
+.footer-social,
+.footer-contact {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+.footer-links a,
+.footer-social a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-contact p {
+    margin: 0;
+}
+
+
+
+/* Estilo do cabeçalho */
+.cabecalho {
+    background-color: #FFA500; 
+    padding: 10px;
+}
+
+.cabecalho-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+}
+/* estilização da logo*/
+.img-logo {
+    max-height: 50px;
+    max-width: 50px;
+    border-radius: 50%;}/* Ajuste o tamanho da logo conforme necessário */
+
+
+
+.logo-titulo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+/* estilização do botão do menu*/
+.menu-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    
+}
+i {
+    color: #333;
+    cursor: pointer;
+    font-size: 20px;
+    right: 10px;
+}
+
+.logo-titulo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cabecalho h3 {
+    color: #fff;
+    font-size: 20px;
+    margin-left: 10px;
+}   
+    
+
+
+/* Estilos para o menu lateral */
+.main-nav {
+    position: fixed;
+    top: 0;
+    left: -300px; 
+    width: 300px;
+    height: 100%;
+    background-color: #ffffff;
+    transition: left 0.3s ease;
+    padding: 40px 0 40px 1%;
+    z-index: 1000;
+}
+
+
+.ul{
+    height: 100%;
+    list-style-type: none;
+}
+.ul li.item-menu:hover{
+    background-color: #FFA500 ;
+}
+
+.ul li.item-menu a {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4px;
+    display: flex;
+    margin-bottom:20px ;
+}
+
+.ul li.item-menu a .txt-link{
+    margin-left: 20px;
+}
+
+
+.main-nav.open {
+    left: 0;
+}
+
+
+a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+}
+a:hover {
+    color: grey;
+}
+
+/* agenda regulatoria*/
+main {
+    flex-grow: 1; /* Faz com que o main ocupe todo o espaço disponível */
+    display: flex;
+}
+
+.agenda-container {
+    width: 100vw; /* Ocupa toda a largura da janela de visualização */
+    height: 100vh; /* Ocupa toda a altura da janela de visualização */
+    margin: 0;
+    padding: 0;
+}
+
+.agenda-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none; /* Remove borda do iframe */
+}
+.legislativo {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .legislativo h2, .legislativo h3 {
+    font-size: 24px;
+    color: #2C3E50; /* Adapte ao esquema de cores do site */
+    /*border-bottom: 2px solid #E67E22;*/
+    margin-bottom: 10px;
+  }
+  
+  .legislativo p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #34495E;
+  }
+  #p-legis{
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+  
+  .legislativo ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .legislativo li {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .legislativo a {
+    color: #3498DB;
+    text-decoration: none;
+  }
+  
+  .legislativo a:hover {
+    text-decoration: underline;
+  }
+
+  .titulo-com-linha {
+    border-top: 2px solid #E67E22;
+    padding-top: 10px;
+}
+
+/* Pagina curso*/
+.courses-page {
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .page-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  /* Grade de cursos */
+  .courses-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Três colunas */
+    gap: 20px; /* Menor espaçamento entre os cursos */
+    justify-content: center;
+  }
+  
+  /* Cartões dos cursos */
+  .course-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 280px; /* Tamanho menor da div */
+  }
+  
+  .course-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Imagem do curso */
+  .course-image {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  /* Título do curso */
+  .course-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  /* Descrição do curso */
+  .course-description {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 15px;
+  }
+  
+  /* Botão de inscrição */
+  .enroll-button {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: #FF5722;;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .enroll-button:hover {
+    background-color: #0077b3;
+    transform: translateY(-3px);
+  }
+
+  /* Pagina privacidade*/
+/* Define o espaçamento para o container principal */
+.privacy-policy .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Define o espaçamento para os parágrafos */
+.privacy-policy p {
+    margin-bottom: 20px; /* Espaço entre parágrafos */
+    line-height: 1.6; /* Aumenta o espaçamento entre as linhas */
+}
+
+/* Define o espaçamento para títulos */
+.privacy-policy h1,
+.privacy-policy h2,
+.privacy-policy h3 {
+    margin-top: 30px; /* Espaçamento acima dos títulos */
+    margin-bottom: 15px; /* Espaçamento abaixo dos títulos */
+    line-height: 1.4; /* Ajusta o espaçamento entre as linhas dos títulos */
+}
+
+/* Define o espaçamento entre itens de lista */
+.privacy-policy ul {
+    margin-bottom: 20px;
+}
+
+.privacy-policy ul li {
+    margin-bottom: 10px; /* Espaço entre os itens da lista */
+}
+
+/* Ajusta o título principal */
+.privacy-policy h1 {
+    font-size: 2em;
+    margin-bottom: 20px; /* Maior espaço abaixo do título principal */
+}
+
+/* Ajusta os títulos secundários */
+.privacy-policy h2 {
+    font-size: 1.5em;
+}
+
+/* Ajusta os subtítulos */
+.privacy-policy h3 {
+    font-size: 1.2em;
+}
+
+/* Remove qualquer margem adicional desnecessária nos últimos elementos */
+.privacy-policy p:last-child, 
+.privacy-policy ul:last-child {
+    margin-bottom: 0;
+}
+
+
+/* queries para tabletes*/
+@media(min-width: 768px){
+    .cabecalho{
+        padding: 2px;
+        
+    }
+    .cabecalho-div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    .logo-titulo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .main-nav .icon {
+        display: none; /* Esconde os ícones na versão desktop */
+    }
+    .expancao-botao{
+        display: none;
+    }
+
+    .main-nav {
+        position: static;
+        display: flex;
+        align-items: center;
+        background-color: transparent;
+        width: auto;
+        height: auto;
+        padding: 0;
+    }
+
+    .ul {
+        display: flex;
+        gap: 10px;
+    }
+
+    .ul li {
+        list-style: none;
+    }
+
+    .ul li a {
+        color: #fff;
+        font-size: 18px;
+        padding: 5px 10px;
+        text-decoration: none;
+    }
+
+
+    .menu-btn {
+        display: none;
+    }
+    .ul li.item-menu a .txt-link{
+        margin-left: 5px;
+        margin-top: 10px;
+    }
+    .ul li.item-menu:hover{
+        background-color: transparent;
+    }
+    .menu-fechar-btn{
+        display: none;
+    }
+
+}
+
+/* queries para desktop*/
+@media(min-width: 1024px){
+    .cabecalho{
+        padding: 2px;
+        
+        
+        
+    }
+    .cabecalho-div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo-titulo {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    .titulo-header {
+        color: #fff;
+        font-size: 20px;
+        margin: 0;
+        line-height: 40px; /* Define a altura da linha para alinhar com a altura da logo */
+    }
+    .main-nav .icon {
+        display: none; /* Esconde os ícones na versão desktop */
+    }
+    .expancao-botao{
+        display: none;
+    }
+
+    .main-nav {
+        position: static;
+        display: flex;
+        align-items: center;
+        background-color: transparent;
+        width: auto;
+        height: auto;
+        padding: 0;
+    }
+
+    .ul {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .ul li {
+        list-style: none;
+    }
+
+    .ul li a {
+        color: #fff;
+        font-size: 18px;
+        padding: 5px 10px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+    }
+
+
+    .menu-btn {
+        display: none;
+    }
+    .ul li.item-menu a .txt-link{
+        margin-left: 5px;
+        margin-top: 10px;
+    }
+    .ul li.item-menu:hover{
+        background-color: transparent;
+    }
+    .menu-fechar-btn{
+        display: none;
+    }
+
+
+}
