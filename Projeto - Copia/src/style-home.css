@@ -1,0 +1,312 @@
+
+.intro-section {
+  padding: 50px 20px;
+  background-color: #ffffff;
+  text-align: center;
+  border-bottom: 2px solid #ccc;
+}
+
+.intro-content h1 {
+  font-size: 42px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.intro-content p {
+  font-size: 20px;
+  color: #555;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.intro-button {
+  display: inline-block;
+  padding: 15px 30px;
+  margin: 10px;
+  background-color: #ff6600;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.intro-button:hover {
+  background-color: #0077b3;
+  transform: scale(1.05);
+}
+
+
+
+
+.entrevistas-section {
+  text-align: center;
+  margin: 40px auto;
+  padding: 20px;
+  max-width: 1600px; /* Limita a largura máxima da seção */
+  background-color: #ffffff; /* Cor de fundo leve */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+
+.entrevistas-section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.entrevistas-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Espaço entre entrevistas */
+  gap: 20px;
+  padding: 20px;
+}
+
+.container-entrevistas {
+  flex: 1 1 calc(33.333% - 20px); /* Três colunas no desktop */
+  box-sizing: border-box;
+  max-width: 100%; /* Garante que os itens não excedam a largura */
+}
+
+.entrevista {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para os cartões */
+  transition: transform 0.3s;
+}
+
+.entrevista:hover {
+  transform: translateY(-10px); /* Efeito hover */
+}
+
+.entrevista h3 {
+  font-size: 1.5em;
+  color: #151515;
+  margin: 10px 0;
+}
+
+.entrevista p {
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #494b4c;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #f5a36c;
+}
+.more-interviews {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.btn-view-more {
+  background-color: #494b4c;
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease;
+}
+
+.btn-view-more:hover {
+  background-color: #f5a36c;
+}
+
+.courses-section {
+  background-color: #f9f9f9;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  text-align: center;
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.courses-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.courses-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Estilos para o tamanho dos ícones */
+.size-6 {
+  width: 50px; /* Ajusta o tamanho do ícone */
+  height: 50px; /* Ajusta o tamanho do ícone */
+  margin-right: 20px; /* Espaço entre o ícone e o texto */
+}
+
+.course-item {
+  display: flex; /* Para alinhar o ícone e o texto lado a lado */
+  align-items: center; /* Alinhar verticalmente */
+  width: 100%; /* Faz com que o item ocupe toda a largura disponível */
+  max-width: 600px; /* Limite da largura do item */
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.course-item p {
+  font-size: 1.2rem; /* Ajuste o tamanho da fonte */
+  color: #555;
+  text-align: left; /* Alinhar o texto à esquerda */
+  margin: 0; /* Remove margens padrão */
+}
+
+
+.courses-button {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #FF5722; /* Cor de fundo laranja vibrante */
+  color: white;
+  text-decoration: none;
+  border-radius: 25px; /* Bordas arredondadas */
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Sombra leve para destaque */
+}
+
+
+.news-section {
+  padding: 20px;
+  background-color: #f9f9f9;
+  max-width: 1600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.news-section h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+  gap: 20px;
+}
+
+.news-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.news-item h3 a {
+  text-decoration: none;
+  color: #0056b3;
+  font-size: 20px;
+}
+
+.news-item p {
+  font-size: 16px;
+  color: #555;
+  margin: 10px 0;
+}
+
+.news-item .read-more {
+  text-decoration: none;
+  color: #ff6600;
+  font-weight: bold;
+}
+
+.news-item .read-more:hover {
+  text-decoration: underline;
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .container-entrevistas {
+    flex: 1 1 calc(50% - 20px); /* Duas colunas no tablet */
+  }
+}
+
+@media (max-width: 480px) {
+  .container-entrevistas {
+    flex: 1 1 100%; /* Uma coluna no mobile */
+  }
+}
+
+@media (max-width: 768px) {
+  .news-grid {
+      grid-template-columns: 1fr; /* 1 coluna no mobile */
+  }
+}
+@media screen and (max-width: 768px) {
+  .entrevistas-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .container-entrevistas {
+    margin-bottom: 20px;
+  }
+}
+
+/* Media query para telas menores que 600px */
+@media screen and (max-width: 600px) {
+  .entrevistas-section {
+    padding: 15px;
+  }
+
+  .btn, .btn-view-more {
+    display: block;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .more-interviews {
+    margin-top: 20px;
+  }
+}
+
+/* Media query específica para telas menores que 396px */
+@media screen and (max-width: 396px) {
+  .entrevistas-section {
+    padding: 10px;
+  }
+
+  .entrevista h3 {
+    font-size: 18px;
+  }
+
+  .entrevista p {
+    font-size: 14px;
+  }
+
+  .btn, .btn-view-more {
+    font-size: 14px;
+    padding: 8px 16px;
+    white-space: normal;
+  }
+}
