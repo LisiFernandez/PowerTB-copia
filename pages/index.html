@@ -214,5 +214,25 @@
     </section>
     <div id="footer-placeholder"></div>
     <script src="../script.js"></script>
+    <script>
+        // Defina a data em que você quer que o site entre em manutenção
+        const dataDeManutencao = new Date("2024-11-06T11:10:00");  // Exemplo: 10 de novembro de 2024
+        
+        // Função para verificar se a data de manutenção já chegou
+        function verificarManutencao() {
+            const dataAtual = new Date();
+            
+            // Se a data atual for maior ou igual à data de manutenção, redireciona para a página de manutenção
+            if (dataAtual >= dataDeManutencao) {
+                window.location.href = "maintance.html"; // Redireciona para a página de manutenção
+            }
+        }
+        
+        // Verifica se a data de manutenção chegou
+        verificarManutencao();
+    </script>
+
+
+
 </body>
 </html>
